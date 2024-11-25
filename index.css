@@ -1,0 +1,118 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c3b09e;
+  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1{
+    justify-content: center;
+    align-items: center;
+display: flex;
+    font-family :cursive;
+    font-size: 60px;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 20px;
+margin-top: 50px;
+   
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    font-size: 2.5rem;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box:hover {
+    background-color: #e69c6a;
+}
+
+/* Game message and buttons */
+.msg-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.msg-container.show {
+    display: block;
+}
+
+#msg {
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+#new-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+#new-btn:hover, #reset-btn:hover {
+    background-color: #45a049;
+}
+#reset-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 45%;
+    border-radius: 10px;
+}
+.footer{
+         height: 70px;
+         width: 100%;
+         background-color: #6cac6c;
+         font-family: sans-serif;
+         margin-top: 200px;
+         margin-bottom: 0px;
+         justify-content: center;
+         align-content: center;
+         display: flex;
+         color:white;
+}
+#mode-select {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 42%;
+    border-radius: 10px;
+}
